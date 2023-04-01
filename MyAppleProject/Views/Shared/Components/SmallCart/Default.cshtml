@@ -1,0 +1,16 @@
+﻿@model SmallCartViewModel
+
+@if(Model != null) 
+{
+    <p>Количество товаров: <span class ="barge barge-primary">@Model.NumberOfItems</span></p>
+    <p>Итого: <b>@Model.TotalAmount.ToString("C2")</b></p>
+    <a class="btn-primary" asp-controller="Cart" asp-action="Index">Посмотреть корзину</a>
+    <a class="btn-danger" asp-controller="Cart" asp-action="Clear">Очистить козину</a>  
+}
+else
+{
+    <p class="lead m-0">Ваша корзина пуста</p>
+}
+
+
+
