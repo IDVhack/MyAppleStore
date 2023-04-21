@@ -1,4 +1,6 @@
-﻿namespace MyAppleProject.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace MyAppleProject.Models
 {
     public class Category
     {

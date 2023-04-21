@@ -1,10 +1,11 @@
 ﻿using MyAppleProject.Models;
 using Microsoft.EntityFrameworkCore;
-
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace MyAppleProject.Infrasrtucture
 {
-    public class DataContext : DbContext
+    public class DataContext : IdentityDbContext
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
